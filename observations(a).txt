@@ -1,0 +1,126 @@
+After typing "git init", the console read "Implementing Multi-Threaded Processes Using Kernel Threads"
+
+After typing "git status", the console read "# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   aboutMe.txt
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    aboutMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	observations.txt"
+
+After creating "aboutMe.txt" and typing "git status", it reads 
+"# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   aboutMe.txt
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    aboutMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	observations.txt
+[lscola@linux10615 lab2git]$ vi aboutMe.txt
+[lscola@linux10615 lab2git]$ git add aboutMe.txt
+[lscola@linux10615 lab2git]$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   aboutMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	observations.txt"
+
+
+After using git commit and inserting my comment, the console displayed the following message
+"[master (root-commit) 1122717] Here's the new file
+ Committer: leila a scola <lscola@linux10615.dc.engr.scu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutMe.txt"
+
+After adding the new file, this is what happens after git status
+"# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	allstaff.txt
+#	observations.txt
+nothing added to commit but untracked files present (use "git add" to track)"
+
+
+After making changes to aboutMe.txt and typing git status, this appeared
+"# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   aboutMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	observations.txt"
+
+After committing the changes, the console read 
+"[master b4ca7cc] made some changes
+ Committer: leila a scola <lscola@linux10615.dc.engr.scu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)"
+
+
+If I add a third file to the folder and don't want it to be tracked by git, I will not add it or commit. This can be seen with my observations.txt file.
+
+
+
+
+
+
+
+
